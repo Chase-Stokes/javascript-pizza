@@ -50,5 +50,13 @@ Code:
       userPizza.adjustCost();
 Expected Output:
       userPizza = {size: "small", toppings: ["pineapple", "onion"], premium: "chicken", price: 7}
+
+Test: It will modify the price based off of the length of the premium property
+
+Code:
+      let userPizza = new Pizza("small", ["pineapple", "onion"], "chicken", 0);
+      userPizza.adjustCost();
+Expected Output:
+      userPizza = {size: "small", toppings: ["pineapple", "onion"], premium: ["chicken", "tofu"], price: 7}
             
       

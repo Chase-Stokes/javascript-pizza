@@ -3,6 +3,18 @@
   margin-top: 5em;  
 }
 
+.header button {
+  position:absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10em;
+  margin-top: 5em;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSbPheOGH8n0t1jgG-vVtk6aYT9ZxfJJT47DZ1I1h9bBLm9Bk0qVJJkQo2eIuQysR3E8w&usqp=CAU);
+  background-size: 100%;
+  width: 3em;
+  height: 3em;
+}
+
 h1{
   font-size: 500%;
 }
@@ -14,8 +26,15 @@ body {
   background-size: cover;
 }
 
-button {
+.box button {
   margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.em {
+  display: none;
+  font-size: 75%;
+  font-style: italic;
 }
 
 label {
@@ -31,6 +50,8 @@ label {
   margin-left: 5em;
   margin-bottom: 5em;
 }
+
+
 
 
 

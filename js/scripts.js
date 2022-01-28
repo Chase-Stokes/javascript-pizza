@@ -49,5 +49,9 @@ $(document).ready(function(){
     let pizza = new Pizza(pSize, topArray, premArray);
     pizza.adjustCost();
     addToCart(pizza)
+    $(".em").prepend("<hr>")
+    $(".em").append("<hr>")
+    $(".em").show();
   });
+  
 });

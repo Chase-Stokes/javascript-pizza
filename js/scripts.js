@@ -6,5 +6,7 @@ function Pizza(size, toppings, premium) {
 }
 
 Pizza.prototype.adjustCost = function () {
-
+  if (this.size === "medium") {
+    this.price += 8;
+  }
 }

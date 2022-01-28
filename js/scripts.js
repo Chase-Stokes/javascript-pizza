@@ -20,18 +20,18 @@ Pizza.prototype.adjustCost = function () {
 };
 
 function addToCart(pizza) {
-  $(".cartItem").append("<li>Pizza Size: " +pizza.size+ "</li>");
+  $(".cartItem").append("<li><strong>Pizza Size:</strong> " +pizza.size+ "</li>");
   let i = 0;
   let y = 0;
   pizza.toppings.forEach(function(topping){
     i++;
-    $(".cartItem").append("<li>Topping "+ i + ": " +topping+ "</li>");
+    $(".cartItem").append("<li><strong>Topping "+ i + ":</strong> " +topping+ "</li>");
   });
   pizza.premium.forEach(function(topping){
     y++;
-    $(".cartItem").append("<li>Premium Topping "+ y + ": " +topping+ "</li>");
+    $(".cartItem").append("<li><strong>Premium Topping "+ y + ":</strong> " +topping+ "</li>");
   })
-  $(".cartItem").append("<li> Total Price: " +pizza.price+ "</li>");
+  $(".cartItem").append("<li><strong>Total Price:</strong> $" +pizza.price+ "</li>");
 };
 
 $(document).ready(function(){
@@ -53,5 +53,8 @@ $(document).ready(function(){
     $(".em").append("<hr>")
     $(".em").show();
   });
-  
+  $("#btn-cart").on("click", function(){
+    $(".page1").hide();
+    $(".cart").show();
+  })
 });

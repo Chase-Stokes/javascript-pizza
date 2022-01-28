@@ -51,6 +51,15 @@ label {
   margin-bottom: 5em;
 }
 
+.cart {
+  display: none;
+  background-color: rgba(180, 180, 180, 0.4);
+  width: 30em;
+  padding: 3em;
+  margin-left: 5em;
+  margin-bottom: 5em;
+}
+
 
 
 

@@ -1,37 +1,35 @@
-.col {
-  border: 1px solid black;
-  padding: 1em;
-  padding-left: 3em;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: cornsilk;
-}
-
-.col button {
-  margin-top: 1em;
-  margin-right: auto;
-  margin-left: auto;  
-}
-
-#order {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.sendOrder {
-  margin-top: 2em;
-  text-align: center;
-  background-color: cornsilk;
-}
-
 .header {
   margin-bottom: 5em;
-  margin-top: 5em;
-  background-color: cornsilk;
+  margin-top: 5em;  
+}
+
+h1{
+  font-size: 500%;
 }
 
 body {
-  background-color: black;
+  background-image: url(https://st4.depositphotos.com/8005734/23647/i/1600/depositphotos_236477300-stock-photo-traditional-italian-pizza-vegetables-ingredients.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+button {
+  margin-top: 2em;
+}
+
+label {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.box {
+  background-color: rgba(180, 180, 180, 0.4);
+  width: 18em;
+  padding: 3em;
+  margin-left: 5em;
+  margin-bottom: 5em;
 }
 
 

@@ -6,13 +6,14 @@ function Pizza(size, toppings, premium) {
 };
 
 Pizza.prototype.adjustCost = function () {
+  let pizzaToppings = this.toppings.length *2;
   if (this.size === "medium") {
-    this.price += 8;
+    this.price += (8 + pizzaToppings);
   } else if (this.size === "large") {
-    this.price += 10;
+    this.price += (10 + pizzaToppings);
   } else if (this.size === "x-large") {
-    this.price += 12;
+    this.price += (12 + pizzaToppings);
   } else {
-    this.price += 5;
+    this.price += (5 + pizzaToppings);
   }
 };

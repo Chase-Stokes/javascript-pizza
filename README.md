@@ -26,5 +26,13 @@ Code:
       userPizza.adjustCost();
 Expected Output:
       userPizza = {size: "large", toppings: "pineapple", premium: "chicken", price: 10}
+
+Test: It will modify the price based off of the size property of x-large
+
+Code:
+      let userPizza = new Pizza("medium", "pineapple", "chicken", 0);
+      userPizza.adjustCost();
+Expected Output:
+      userPizza = {size: "x-large", toppings: "pineapple", premium: "chicken", price: 12}
             
       

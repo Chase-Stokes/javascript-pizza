@@ -14,32 +14,41 @@
   <div class="container">
     <div class="header">
       <h1>Epicodus Pizza</h1>
+      <hr>
     </div>
-    <div class="box">
-      <form id="pizzaForm">
-        <label for="size">Select your size:</label><br>
-        <select name="size" id="size">
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-          <option value="x-large">XL</option>
-        </select>
-        <label for="toppings">Select your veggies:</label><br>
-        <input type="checkbox" name="toppings" value="onion">Onion<br>
-        <input type="checkbox" name="toppings" value="mushroom">Mushrooms<br>
-        <input type="checkbox" name="toppings" value="olive">Olives<br>
-        <input type="checkbox" name="toppings" value="spinach">Spinach<br>
-        <input type="checkbox" name="toppings" value="peppers">Bell Peppers<br>
-        <input type="checkbox" name="toppings" value="tomato">Tomato<br>
-        <input type="checkbox" name="toppings" value="garlic">Fresh Garlic<br>
-        <label for="premium">Select your premium toppings:</label><br>
-        <input type="checkbox" name="premium" value="x-cheese">Extra Cheese<br>
-        <input type="checkbox" name="premium" value="pepperoni">Pepperoni<br>
-        <input type="checkbox" name="premium" value="bacon">Bacon<br>
-        <input type="checkbox" name="premium" value="tofu">Tofu<br>
-        <input type="checkbox" name="premium" value="chicken">Chicken<br>
-        <button class="btn-dark" id="order">Order Now</button>
-      </form>  
+    <div class="page1">
+      <div class="box">
+        <form id="pizzaForm">
+          <label for="size">Select your size:</label><br>
+          <hr>
+          <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">XL</option>
+          </select>
+          <label for="toppings">Select your veggies:</label><br>
+          <input type="checkbox" name="toppings" value="onion">Onion<br>
+          <input type="checkbox" name="toppings" value="mushroom">Mushrooms<br>
+          <input type="checkbox" name="toppings" value="olive">Olives<br>
+          <input type="checkbox" name="toppings" value="spinach">Spinach<br>
+          <input type="checkbox" name="toppings" value="peppers">Bell Peppers<br>
+          <input type="checkbox" name="toppings" value="tomato">Tomato<br>
+          <input type="checkbox" name="toppings" value="garlic">Fresh Garlic<br>
+          <label for="premium">Select your premium toppings:</label><br>
+          <hr>
+          <input type="checkbox" name="premium" value="x-cheese">Extra Cheese<br>
+          <input type="checkbox" name="premium" value="pepperoni">Pepperoni<br>
+          <input type="checkbox" name="premium" value="bacon">Bacon<br>
+          <input type="checkbox" name="premium" value="tofu">Tofu<br>
+          <input type="checkbox" name="premium" value="chicken">Chicken<br>
+          <button class="btn-dark" id="order">Order Now</button>
+        </form>  
+      </div>
+    </div>
+    <div class="cart">
+      <h3>Properties of your pizza!</h3>
+      <ul class="cartItem"></ul>
     </div>
   </div> 
 </body>

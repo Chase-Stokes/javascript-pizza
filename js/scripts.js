@@ -20,11 +20,19 @@ Pizza.prototype.adjustCost = function () {
 };
 
 function addToCart(pizza) {
-  $("").text(pizza.size)
-  $("").text(pizza.toppings)
-  $("").text(pizza.premium)
-  $("").text(pizza.price)
-}
+  $(".cartItem").append("<li>Pizza Size: " +pizza.size+ "</li>");
+  let i = 0;
+  let y = 0;
+  pizza.toppings.forEach(function(topping){
+    i++;
+    $(".cartItem").append("<li>Topping "+ i + ": " +topping+ "</li>");
+  });
+  pizza.premium.forEach(function(topping){
+    y++;
+    $(".cartItem").append("<li>Premium Topping "+ y + ": " +topping+ "</li>");
+  })
+  $(".cartItem").append("<li> Total Price: " +pizza.price+ "</li>");
+};
 
 $(document).ready(function(){
   $("#pizzaForm").submit(function(event){

@@ -18,3 +18,28 @@ Pizza.prototype.adjustCost = function () {
     this.price += (5 + pizzaToppings + premiumToppings);
   }
 };
+
+function addToCart(pizza) {
+  $("").text(pizza.size)
+  $("").text(pizza.toppings)
+  $("").text(pizza.premium)
+  $("").text(pizza.price)
+}
+
+$(document).ready(function(){
+  $("#pizzaForm").submit(function(event){
+    event.preventDefault();
+    let pSize = $("#size").val();
+    let topArray = [];
+    let premArray = [];
+    $("input:checkbox[name=toppings]:checked").each(function(){
+      topArray.push($(this).val());
+    });
+    $("input:checkbox[name=premium]:checked").each(function(){
+      premArray.push($(this).val());
+    });
+    let pizza = new Pizza(pSize, topArray, premArray);
+    pizza.adjustCost();
+    addToCart(pizza)
+  });
+});

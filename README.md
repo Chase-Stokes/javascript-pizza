@@ -11,12 +11,20 @@ Expected Output:
 
 Describe:   adjustCost()
 
-Test: It will modify the price based off of the size property
+Test: It will modify the price based off of the size property of medium
 
 Code:
       let userPizza = new Pizza("medium", "pineapple", "chicken", 0);
       userPizza.adjustCost();
 Expected Output:
       userPizza = {size: "medium", toppings: "pineapple", premium: "chicken", price: 8}
+
+Test: It will modify the price based off of the size property of large
+
+Code:
+      let userPizza = new Pizza("medium", "pineapple", "chicken", 0);
+      userPizza.adjustCost();
+Expected Output:
+      userPizza = {size: "large", toppings: "pineapple", premium: "chicken", price: 10}
             
       

@@ -12,5 +12,7 @@ Pizza.prototype.adjustCost = function () {
     this.price += 10;
   } else if (this.size === "x-large") {
     this.price += 12;
+  } else {
+    this.price += 5;
   }
 };

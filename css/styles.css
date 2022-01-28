@@ -17,6 +17,7 @@
 
 h1{
   font-size: 500%;
+  
 }
 
 body {
@@ -24,6 +25,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .box button {

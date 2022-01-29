@@ -57,4 +57,6 @@ $(document).ready(function(){
     $(".page1").hide();
     $(".cart").show();
   });
+  $("#home").submit(function(){
+  })
 });

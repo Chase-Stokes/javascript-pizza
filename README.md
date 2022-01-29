@@ -1,3 +1,37 @@
+# _JavaScript Pizza_
+
+#### By _**Chase Stokes**_
+
+#### _{An Epicodus project making a pizza website}_
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _JQuery_
+* _Google Fonts_
+
+## Description
+
+_A project making use of constructors and loops to display the property values of a pizza object._
+
+## Setup/Installation Requirements
+
+* _Clone the project from [github.com/chase-stokes/javascript-pizza]_
+* _open the project in a text editor of your choice_
+* _open the html by right clicking the html in your text-editor and click open live server to monitor changes in your preferred browser_
+* _enjoy your pizza!_
+
+## Known Bugs
+
+* _No Known Bugs_
+
+## License
+
+_MIT_
+
+Copyright (c) _01/28/2022_ _Chase Stokes_
 ## Tests
 
 Describe:   Pizza()

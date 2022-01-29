@@ -16,7 +16,7 @@ Pizza.prototype.adjustCost = function () {
     this.price += (12 + pizzaToppings + premiumToppings);
   } else {
     this.price += (5 + pizzaToppings + premiumToppings);
-  }
+  };
 };
 
 function addToCart(pizza) {
@@ -30,7 +30,7 @@ function addToCart(pizza) {
   pizza.premium.forEach(function(topping){
     y++;
     $(".cartItem").append("<li><strong>Premium Topping "+ y + ":</strong> " +topping+ "</li>");
-  })
+  });
   $(".cartItem").append("<li><strong>Total Price:</strong> $" +pizza.price+ "</li>");
 };
 
@@ -48,7 +48,7 @@ $(document).ready(function(){
     });
     let pizza = new Pizza(pSize, topArray, premArray);
     pizza.adjustCost();
-    addToCart(pizza)
+    addToCart(pizza);
     $(".em").prepend("<hr>")
     $(".em").append("<hr>")
     $(".em").show();
@@ -56,5 +56,5 @@ $(document).ready(function(){
   $("#btn-cart").on("click", function(){
     $(".page1").hide();
     $(".cart").show();
-  })
+  });
 });
